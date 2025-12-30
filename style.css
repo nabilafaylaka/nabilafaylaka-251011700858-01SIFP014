@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("sampul music.png") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #ff69b4;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4a004a;
+}
+
+.time {
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.content {
+    display: none;
+    background: rgba(255,255,255,0.85);
+    margin: 30px auto;
+    width: 80%;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    animation: fadeUp 0.6s ease;
+}
+
+.content.active {
+    display: block;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.lagu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.lagu-card {
+    background: white;
+    width: 230px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.lagu-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.next-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.next-btn:hover {
+    background: #e754a6;
+}
+
+/* KONTAK */
+.kontak-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.kontak-card{
+    background:#fff;
+    width:260px;
+    padding:25px 20px;
+    border-radius:20px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+.kontak-card .icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.kontak-card h3{
+    color:#d63384;
+    margin-bottom:8px;
+}
+
+.kontak-card p{
+    font-size:14px;
+    color:#444;
+}
+
+.kontak-card a{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 22px;
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+.kontak-card a:hover{
+    background:#e754a6;
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    background: linear-gradient(135deg, #ff69b4, #ff9acb);
+    text-align: center;
+    padding: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-text {
+    display: inline-block;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.08); opacity: 0.85; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* ===== FORM KONTAK ===== */
+.form-wrapper {
+    margin-top: 50px;
+}
+
+.form-wrapper table {
+    margin: auto;
+}
+
+.form-wrapper td {
+    padding: 6px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.form-wrapper td:first-child {
+    text-align: right;
+    padding-right: 12px;
+    white-space: nowrap;
+}
+
+.form-wrapper input,
+.form-wrapper textarea,
+.form-wrapper select {
+    width: 280px;
+    padding: 7px 9px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-wrapper textarea {
+    resize: vertical;
+}
+
+.form-wrapper input[type="radio"] {
+    width: auto;
+}
+
+.form-wrapper input[type="file"] {
+    border: none;
+}
+
+.form-wrapper .btn {
+    width: 120px;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background: #ff69b4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-wrapper .btn.reset {
+    background: #999;
+}
+
+.form-wrapper .btn:hover {
+    background: #e754a6;
+}

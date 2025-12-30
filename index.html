@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Music - Nabila Faylaka</title>
+
+    <!-- CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a onclick="showContent('home')">Home</a></li>
+        <li><a onclick="showContent('lagu')">Lagu</a></li>
+        <li><a onclick="showContent('tentang')">Tentang</a></li>
+        <li><a onclick="showContent('kontak')">Kontak</a></li>
+    </ul>
+</nav>
+
+<div class="time" id="dateTime"></div>
+
+<div id="home" class="content active">
+    <h1>Selamat Datang di Music - Nabila Faylaka 🎵</h1>
+    <p>Selamat menikmati playlist Music - Nabila Faylaka ✨</p>
+</div>
+
+<div id="lagu" class="content">
+    <h1>Daftar Music 🎶</h1>
+    <div class="lagu-container">
+        <div class="lagu-card">
+            <img src="foto lagu my heart.jpg">
+            <h3>My Heart</h3>
+            <audio class="audio" controls>
+                <source src="my-heart.mp3">
+            </audio>
+            <button class="next-btn" onclick="nextSong(0)">Next ▶</button>
+        </div>
+
+        <div class="lagu-card">
+            <img src="foto sampai akhir waktu.jpg">
+            <h3>Sampai Akhir Waktu</h3>
+            <audio class="audio" controls>
+                <source src="sampai-akhir-waktu.mp3">
+            </audio>
+            <button class="next-btn" onclick="nextSong(1)">Next ▶</button>
+        </div>
+
+        <div class="lagu-card">
+            <img src="img bintang 14 hari.jpg">
+            <h3>Bintang 14 Hari</h3>
+            <audio class="audio" controls>
+                <source src="bintang-14-hari.mp3">
+            </audio>
+            <button class="next-btn" onclick="nextSong(2)">Next ▶</button>
+        </div>
+    </div>
+</div>
+
+<div id="tentang" class="content">
+    <h1>Tentang Music</h1>
+   <p align="justify">
+     🎵 <strong style="color: #FF1493 ;"> Pengertian Lagu </strong> <br><br>
+        Lagu adalah karya seni dalam bentuk suara yang tersusun dari melodi, irama, 
+        dan lirik (kata-kata) yang disusun secara harmonis untuk mengungkapkan perasaan, ide, atau pesan.<br>
+        ➡️ Lagu bisa dinyanyikan dengan iringan musik atau tanpa musik (a cappella).<br>
+        ➡️ Tujuan lagu: hiburan, ekspresi diri, pendidikan, ritual, hingga media komunikasi sosial.</p>
+    <p align="justify">  
+     📅 <strong style="color: #FF1493 ;"> Lagu Mulai Dikenal (Sejarah Singkat) </strong> <br><br>
+        ➡️ Lagu sudah ada sejak zaman kuno, bahkan sebelum manusia mengenal tulisan.<br>
+        ➡️ Awalnya, lagu diciptakan secara lisan, menggunakan suara manusia dan alat musik sederhana (seperti gendang, seruling, atau dawai).<br>
+        ➡️ Lagu modern mulai berkembang pesat setelah abad ke-19, ketika teknologi rekaman dan radio ditemukan.<br>
+        ➡️ Sekarang, lagu bisa dibuat secara digital lewat software musik (DAW) dan disebarkan ke seluruh dunia melalui internet & platform streaming 
+            (Spotify, YouTube, TikTok, dll).</p>
+    <p align="justify">  
+     🎼 <strong style="color: #FF1493 ;"> Jenis-jenis Lagu </strong> <br><br>
+        Lagu bisa dikelompokkan dari berbagai sisi, misalnya berdasarkan fungsi, usia pendengar, atau genre musiknya.<br>
+        ➡️ Lagu Pop → jenis lagu yang mudah didengar, memiliki melodi sederhana, 
+            dan lirik yang mudah diingat, biasanya bertema cinta, kehidupan, atau perasaan sehari-hari.<br><br>
+        ➡️ Lagu Rock → jenis lagu dengan irama kuat, tempo cepat, dan penggunaan alat musik listrik seperti gitar, bass, dan drum, 
+            yang sering mengekspresikan semangat, kebebasan, atau perlawanan.<br><br>
+        ➡️ Lagu Dangdut → jenis lagu khas Indonesia yang memiliki irama gendang kuat dan dipengaruhi oleh musik Melayu, India, dan Arab, 
+            dengan lirik yang biasanya berisi kisah cinta atau kehidupan sehari-hari.<br><br>
+        ➡️ Lagu Klasik → jenis musik yang bernilai seni tinggi, biasanya menggunakan alat musik orkestra seperti piano, 
+            biola, dan cello, serta memiliki struktur dan teknik yang kompleks.<br><br>
+        ➡️ Lagu Tradisional → jenis lagu yang berasal dari suatu daerah dan diwariskan secara turun-temurun,
+            yang mencerminkan budaya, adat, dan kehidupan masyarakat setempat.<br><br>
+        ➡️ Lagu Hiphop → jenis lagu yang berisi ritme kuat dan lirik berupa rap atau pantun cepat, 
+            yang biasanya mengungkapkan gaya hidup, perasaan, atau kritik sosial.<br><br></p>
+</div>
+
+<div id="kontak" class="content">
+    <h1>💌 Hubungi Kami</h1>
+    <p>Kami siap dihubungi melalui media berikut</p>
+
+    <div class="kontak-container">
+        <div class="kontak-card">
+            <div class="icon">📧</div>
+            <h3>Email</h3>
+            <p>music-nabila<br>faylaka@email.com</p>
+            <a href="mailto:music-nabila@email.com">Kirim Email</a>
+        </div>
+
+        <div class="kontak-card">
+            <div class="icon">📸</div>
+            <h3>Instagram</h3>
+            <p>@octnfy</p>
+            <a href="https://www.instagram.com/octnfy" target="_blank">
+                Buka Instagram
+            </a>
+        </div>
+
+        <div class="kontak-card">
+            <div class="icon">💬</div>
+            <h3>WhatsApp</h3>
+            <p>08xxxxxxxxxx</p>
+            <a href="https://wa.me/6281317307657" target="_blank">
+                Chat Sekarang
+            </a>
+        </div>
+    </div>
+
+    <!-- FORMULIR -->
+    <div class="form-wrapper">
+        <h2 style="color:#d63384;">Formulir Music - Nabila faylaka 🎶</h2>
+
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Nama :</td>
+                    <td><input type="text" name="nama" required placeholder="Masukan Nama Anda"></td>
+                </tr>
+                <tr>
+                    <td>Umur :</td>
+                    <td><input type="number" name="umur" required placeholder="Masukan Umur Anda"></td>
+                </tr>
+                <tr>
+                    <td>NIM :</td>
+                    <td><input type="number" name="nim" required placeholder="Masukan NIM Anda"></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" name="pass" required placeholder="Masukan Password"></td>
+                </tr>
+                <tr>
+                    <td>Alamat :</td>
+                    <td><textarea name="alamat" rows="3" placeholder="Masukan Alamat Anda"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Kota :</td>
+                    <td>
+                        <select name="kota">
+                            <option>--pilih kota--</option>
+                            <option>Jakarta Barat</option>
+                            <option>Tangerang</option>
+                            <option>Jakarta Selatan</option>
+                            <option>Tangerang Selatan</option>
+                            <option>Bogor</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin :</td>
+                    <td>
+                        <label><input type="radio" name="jk"> Perempuan</label>
+                        <label style="margin-left:15px;">
+                            <input type="radio" name="jk"> Laki-laki
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir :</td>
+                    <td><input type="date" name="tgl"></td>
+                </tr>
+                <tr>
+                    <td>Nomor Telepon :</td>
+                    <td><input type="number" name="telp" placeholder="08xxxxxxxxxx"></td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="email" name="email" placeholder="Masukan Email"></td>
+                </tr>
+                <tr>
+                    <td>Instagram :</td>
+                    <td><input type="text" name="instagram" placeholder="@username"></td>
+                </tr>
+                <tr>
+                    <td>Jurusan :</td>
+                    <td>
+                        <select name="jrs">
+                            <option>Sistem Informasi</option>
+                            <option>Teknik Informatika</option>
+                            <option>Ilmu Komunikasi</option>
+                            <option>Hukum</option>
+                            <option>Elektro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobby :</td>
+                    <td>
+                        <select name="hobby">
+                            <option>--pilih hobby--</option>
+                            <option>Mendengarkan Musik</option>
+                            <option>Membaca</option>
+                            <option>Menulis</option>
+                            <option>Lainnya</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload File :</td>
+                    <td><input type="file" name="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="reset" value="BATAL" class="btn reset">
+                        <input type="submit" value="KIRIM" class="btn">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<footer>
+    © <span class="footer-text">
+        Nabila Faylaka - 251011700858 - 01SIFP014
+    </span>
+</footer>
+
+<!-- JavaScript eksternal -->
+<script src="script.js"></script>
+</body>
+</html>
